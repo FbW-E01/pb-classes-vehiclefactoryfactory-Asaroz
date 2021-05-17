@@ -46,8 +46,16 @@ const boat_factory = factory_factory("boat")
 const plane_factory = factory_factory("plane")
 
 
-console.log(new bicycle_factory("fahrrad","turbo8000",2010))
-console.log(new car_factory("Auto","turbo7000",1469))
-console.log(new train_factory("Zug","turbo6000",1499))
-console.log(new plane_factory("Flugzeug","turbo28000",3999))
-console.log(new boat_factory("Boot","turbo9999",2999))
+const vehicles=[]
+vehicles.push()
+
+
+
+vehicles.push(new bicycle_factory("fahrrad","turbo8000",2010))
+vehicles.push(new car_factory("Auto","turbo7000",1469))
+vehicles.push(new train_factory("Zug","turbo6000",1499))
+vehicles.push(new plane_factory("Flugzeug","turbo28000",3999))
+vehicles.push(new boat_factory("Boot","turbo9999",2999))
+for(vehicle in vehicles){
+    console.log(vehicles[vehicle])
+}
