@@ -32,13 +32,6 @@ function factory_factory(type) {
     }
 };
 
-function factory(make, model, year) {
-    this.type = ""
-    this.make = make
-    this.model = model
-    this.year = year
-}
-
 const bicycle_factory = factory_factory("bycicle")
 const car_factory = factory_factory("car")
 const train_factory = factory_factory("train")
@@ -59,3 +52,9 @@ vehicles.push(new boat_factory("Boot","turbo9999",2999))
 for(vehicle in vehicles){
     console.log(vehicles[vehicle])
 }
+let helper = new boat_factory("Boot","turbo9999",2999)
+console.log(typeof bicycle_factory)
+console.log(typeof helper)
+
+//the type of factory is function
+//the type of the object is object
